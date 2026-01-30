@@ -3,7 +3,7 @@
 This repository contains code to train and use a Sanskrit Part-of-Speech (POS) tagger. This model is fine-tuned on top of a SanskritBERT base model using a comprehensive Sanskrit POS dataset.
 
 ## Model Details
-- **Base Model**: SanskritBERT (ALBERT/BERT based)
+- **Base Model**: SanskritBERT (BERT based)
 - **Task**: Token Classification (POS Tagging)
 - **Labels**: Noun, Verb, Adjective, Adverb, etc. (UD POS Tags)
 
@@ -26,7 +26,7 @@ python inference.py
 ```python
 from transformers import pipeline
 
-nlp = pipeline("token-classification", model="your-username/sanskrit-pos-bert")
+nlp = pipeline("token-classification", model="tanuj437/sanskrit-bert-pos")
 print(nlp("रामः वनम् गच्छति"))
 ```
 
@@ -45,3 +45,4 @@ python train.py
 
 ## License
 [MIT](LICENSE)
+
