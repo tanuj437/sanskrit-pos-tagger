@@ -44,5 +44,6 @@ python train.py
 - `requirements.txt`: Python dependencies.
 
 ## License
-[MIT](LICENSE)
+[Apache](LICENSE)
+
 
